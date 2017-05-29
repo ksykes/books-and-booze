@@ -2,3 +2,4 @@ node_module
 .DS_Store
 *.pdf
 *.zip
+prepros-6.config
