@@ -1,0 +1,16 @@
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 3rem 8rem;
+	background: $grey;
+	width: 100%;
+	margin: 0;
+	div {
+		width: 50%;
+		padding: 0 1rem;
+	}
+	.copyright {
+		width: 100%;
+	}
+}

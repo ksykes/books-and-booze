@@ -1,0 +1,327 @@
+@charset "UTF-8";
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: url("../assets/shattered-island.gif");
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
+body {
+  font-size: 62.5%; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  color: #F5CB5C; }
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #CFDBD5; }
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #CFDBD5; }
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #CFDBD5; }
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+  color: #CFDBD5; }
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.0rem;
+  color: #CFDBD5; }
+
+a {
+  color: #F5CB5C;
+  transition: 0.5s; }
+  a:hover {
+    color: #CFDBD5;
+    cursor: pointer; }
+
+form {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  color: #CFDBD5; }
+
+footer div {
+  text-align: center; }
+
+header::after, section.form::after {
+  content: '⚯';
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+  color: #F5CB5C;
+  text-align: center; }
+
+main, footer, .quote {
+  margin-top: 2rem; }
+
+#results {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 2rem; }
+  #results .book, #results .alcohol {
+    width: 50%;
+    padding: 0 1rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+    #results .book .recImage, #results .alcohol .recImage {
+      max-width: 75%;
+      margin: 0 auto; }
+      #results .book .recImage img, #results .alcohol .recImage img {
+        width: 100%; }
+
+.quote {
+  width: 60%;
+  margin: 0 auto; }
+
+.removeQuote {
+  display: none; }
+
+form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  form input {
+    outline: 0;
+    border: 1px solid #525174;
+    padding: 1rem; }
+  form input[type="text"] {
+    width: 20rem;
+    max-width: 100%;
+    margin-right: 2rem;
+    border: 2px solid #CFDBD5; }
+    form input[type="text"]:focus {
+      border: 2px solid #F5CB5C; }
+  form input[type="submit"] {
+    background-color: #F5CB5C;
+    color: #32333B;
+    border: 2px solid #32333B; }
+    form input[type="submit"]:hover, form input[type="submit"]:focus {
+      background-color: #32333B;
+      color: #F5CB5C;
+      border: 2px solid #F5CB5C; }
+
+label {
+  display: none; }
+
+footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 3rem 8rem;
+  background: #32333B;
+  width: 100%;
+  margin: 0; }
+  footer div {
+    width: 50%;
+    padding: 0 1rem; }
+  footer .copyright {
+    width: 100%; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  footer {
+    padding: 2rem; } }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  form {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  form input[type="text"] {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 100%; }
+  form input[type="submit"] {
+    display: block; }
+  #results {
+    display: block; }
+    #results .book, #results .alcohol {
+      width: 100%; }
+  footer {
+    display: block; }
+    footer div {
+      width: 100%; } }

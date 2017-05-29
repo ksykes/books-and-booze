@@ -1,0 +1,32 @@
+form {
+	display: flex;
+	justify-content: center;
+	input {
+		outline: 0;
+		border: 1px solid $independence;
+		padding: 1rem;
+	}
+	input[type="text"] {
+		width: 20rem;
+		max-width: 100%;
+		margin-right: 2rem;
+		border: 2px solid $lightGrey;
+		&:focus {
+			border: 2px solid $yellow;
+		}
+	}
+	input[type="submit"] {
+		background-color: $yellow;
+		color: $grey;
+		border: 2px solid $grey;
+		&:hover, &:focus {
+			background-color: $grey;
+			color: $yellow;
+			border: 2px solid $yellow;
+		}
+	}
+}
+
+label {
+	display: none;
+}
